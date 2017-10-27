@@ -20,14 +20,20 @@ function setColor() {
 }
 
 function autoAnimation(fnc, delay) {
-    var isOver = false;
     var interval = setInterval(fnc, delay);
     fnc();
     var block = document.getElementById("auto_animation");
+    var oldP = document.getElementById("auto_animation_p");
+    var oldBtn = document.getElementById("auto_animation_btn");
     var p = document.createElement("p");
     p.innerHTML = "   Tired of watching? -> ";
     var btn = document.createElement("button");
     btn.innerHTML = "Stop Animation";
-    block.replaceChild(p, document.getElementById("auto_animation_p"));
-    block.replaceChild(btn, document.getElementById("auto_animation_btn"));
+    block.replaceChild(p, oldP);
+    block.replaceChild(btn, oldBtn);
+    btn.onclick = function () {
+        clearInterval(interval);
+        block.replaceChild(oldP, p);
+        block.replaceChild(oldBtn, btn);
+    };
 }
