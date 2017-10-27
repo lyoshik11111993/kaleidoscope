@@ -1,0 +1,33 @@
+body {
+    background-color: aliceblue;
+}
+
+#header {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#header #auto_animation {
+    margin: 0 auto;
+    width: 330px;
+}
+
+#header #auto_animation p {
+    margin-top: 3px;
+    float: left;
+}
+
+#header #auto_animation button {
+    float: right;
+}
+
+#content table{
+    margin: 80px auto;
+
+}
+
+td {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
