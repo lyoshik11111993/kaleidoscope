@@ -15,6 +15,22 @@ function setColor() {
         cols = rows[j].getElementsByTagName("td");
         for (var i = 0; i < cols.length; i++) {
             cols[i].bgColor = getRandomColor();
+            document.getElementById("1").bgColor = document.getElementById("1_2").bgColor;
+            document.getElementById("2").bgColor = document.getElementById("2_2").bgColor;
+            document.getElementById("3").bgColor = document.getElementById("3_2").bgColor;
+            document.getElementById("4").bgColor = document.getElementById("4_2").bgColor;
+            document.getElementById("5").bgColor = document.getElementById("5_2").bgColor;
+            document.getElementById("6").bgColor = document.getElementById("6_2").bgColor;
+            document.getElementById("7").bgColor = document.getElementById("7_2").bgColor;
+            document.getElementById("8").bgColor = document.getElementById("8_2").bgColor;
+            document.getElementById("9").bgColor = document.getElementById("9_2").bgColor;
+            document.getElementById("10").bgColor = document.getElementById("10_2").bgColor;
+            document.getElementById("11").bgColor = document.getElementById("11_2").bgColor;
+            document.getElementById("12").bgColor = document.getElementById("12_2").bgColor;
+            document.getElementById("13").bgColor = document.getElementById("13_2").bgColor;
+            document.getElementById("14").bgColor = document.getElementById("14_2").bgColor;
+            document.getElementById("15").bgColor = document.getElementById("15_2").bgColor;
+            document.getElementById("16").bgColor = document.getElementById("16_2").bgColor;
         }
     }
 }
